@@ -1,0 +1,61 @@
+/* STYLES FOR THE TABS */
+.inner-page {
+  font-family: "Roboto", sans-serif;
+}
+.mytabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  margin-top: 0px;
+  padding: 25px;
+}
+.mytabs input[type="radio"] {
+  display: none;
+}
+.mytabs .tabLabel {
+  padding: 25px;
+  background: #e2e2e2;
+  font-weight: bold;
+}
+
+.mytabs .tab {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  order: 1;
+  display: none;
+}
+.mytabs .tab h2 {
+  font-size: 3em;
+}
+
+.mytabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+  background: #fff;
+}
+
+/* END OF STYLES FOR CREATING THE TABS */
+
+
+body {
+  background: #ccc;
+}
+.tab div a, .tab div a:hover{
+  text-decoration: underline;
+}
+input{
+  margin: 5px 0px;
+}
+button{
+  margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+  .mytabs .tabLabel{
+    font-size: 1em;
+    padding: 20px;
+  }
+}
