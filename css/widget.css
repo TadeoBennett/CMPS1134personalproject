@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+#widget {
+  width: 400px;
+  height: 380px;
+  background: hsla(265, 53%, 29%, 1);
+  overflow-y: auto;
+
+  background: linear-gradient(
+    90deg,
+    hsla(265, 53%, 29%, 1) 0%,
+    hsla(24, 93%, 73%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(265, 53%, 29%, 1) 0%,
+    hsla(24, 93%, 73%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(265, 53%, 29%, 1) 0%,
+    hsla(24, 93%, 73%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#432371", endColorstr="#FAAE7B", GradientType=1 );
+  margin: 0 auto;
+  position: relative;
+  color: white;
+  border-radius: 35px;
+}
+
+#widget-image {
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  border-radius: 35px;
+}
+button {
+  border-radius: 10px;
+  color: #fff;
+  background-color: lightslategrey;
+  font-weight: bold;
+}
+button:hover {
+  background-color: rgb(81, 125, 169);
+}
+
+#location {
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+#w-type-image {
+  width: 200px;
+  height: auto;
+}
+#degrees {
+  font-size: 2.5em;
+  margin: 0;
+}
+#prec,
+#humidity {
+  font-size: 1.5em;
+}
+#degrees span {
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 580px) {
+  #widget {
+    height: max-content;
+  }
+  .split {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    overflow: auto;
+  }
+  #bottomsection {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #find-me,
+  #humidity,
+  #prec,
+  #degrees,
+  .col,
+  .col-sm-4,
+  .col-sm-6 {
+    text-align: start;
+  }
+
+  #feels-like, button {
+    float: left;
+  }
+
+  #widget{
+    width: 305px;
+  }
+}

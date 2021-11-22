@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>LOCATION WEATHER INFORMATION</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../../assets/css/style.css" rel="stylesheet">
+
+  <!-- my css file -->
+  <link rel="stylesheet" href="../../assets/css/widget.css">
+
+  <!-- =======================================================
+  * Template Name: Dewi - v4.3.0
+  * Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="../../index.html">F<span>O</span>C</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="../../index.html#hero">Course</a></li>
+          <li class="dropdown">
+            <a class=" nav-link scrollto active" href="#projects">
+              <span>Projects</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Types of Gates</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="../gates/and.html">AND Gate</a></li>
+                  <li><a href="../gates/or.html">OR Gate</a></li>
+                  <li><a href="../gates/not.html">NOT Gate</a></li>
+                  <li><a href="../gates/nor.html">NOR Gate</a></li>
+                  <li><a href="../gates/xor.html">XOR Gate</a></li>
+                  <li><a href="../gates/flipflopcircuit.html">FLIP FLOP CIRCUIT</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Converters</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="../converters/hextobin.html">Hexadecimal to Binary</a></li>
+                  <li><a href="../converters/ascii.html">Text to ASCII</a></li>
+                  <li><a href="../converters/unicode.html">Text to Unicode</a></li>
+                </ul>
+              </li>
+              <li><a href="../other/bmi.html">BMI Calculator</a></li>
+              <li><a href="../other/locationinfo.html">Location Information</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="../../index.html#concepts">Concepts</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#database">Database</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#docs">Documentation</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#other">Other</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#devteam">Dev Team</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>LOCATION WEATHER INFORMATION</h2>
+          <ol>
+            <li><a href="../../index.html">Home</a></li>
+            <li>WTHR</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+        <div class="container">
+          <hgroup class="text-center mb-4">
+            <h1>Click the button in the widget to see weather in your location.</h1>
+            <h3 id="status" style="color: red; text-decoration: underline;"></h3>
+          </hgroup>
+          <div id="widget" class="d-flex row flex-wrap flex-column">
+            <img src="../../assets/img/projects/other/cloudy.jpg" alt="weather-image" id="widget-image">
+            <div class="col">
+              <div style="margin-left: 18px; margin-top: 15px;">
+                <div>
+                  <p id="location">Location</p>
+                </div>
+                <div>
+                  <p id="w-type">Weather-type</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col mb-1">
+              <div id="midsection" class="split d-flex flex-row row text-center">
+                <div class="col-sm-6">
+                  <!-- <i id="icon" class="bi bi-cloud"></i> -->
+                  <img id="w-type-image" src="../../assets/img/projects/other/cloud.png" alt="">
+                </div>
+                <div class="col-sm-6 text-center">
+                  <p id="degrees">00*</p>
+                  <span id="feels-like">Feels like</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col mt-5 m-0">
+              <div id="bottomsection" class="split d-flex flex-row row">
+                <div class="col-sm-4 text-center">
+                  <p id="prec"><span class="labelp">Precip...</span></p>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <p id="humidity"><span class="labelh">Humidity</span></p>
+                </div>
+                <div class="col-sm-4 text-center" id="removable">
+                  <button id="find-me">Use my location</button><br />
+                  <!-- <p id="status"></p>
+                  <a id="map-link" target="_blank"></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <p>I used a weather API from <a href="https://openweathermap.org/" target="_blank">openweathermap.org</a></p>
+          </div>
+        </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <!-- <h3>Dewi</h3> -->
+              <a href="https://www.ub.edu.bz/" target="_blank"><img src="../../assets/img/UB-Logo.png"
+                  alt="University of Belize logo" width="150"></a>
+
+              <p>
+                <strong>Phone:</strong> +501 822-3680<br>
+                <strong>Admissions Clerk:</strong> cbarker@ub.edu.bz <br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://twitter.com/UBBZE" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/UniversityOfBelize" class="facebook" target="_blank"><i
+                    class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/explore/locations/495797932/university-of-belize-central-campus/"
+                  class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCJOSfQBGAGXQxdz7FHSY2UA" class="google-plus"
+                  target="_blank"><i class="bx bxl-youtube"></i></a>
+                <a href="https://www.linkedin.com/company-beta/437378/" class="linkedin" target="_blank"><i
+                    class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#projects">Projects</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#concepts">Concepts</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#database">Database Video</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#docs">Documentation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#other">Other learned course material</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>University of Belize</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.ub.edu.bz/" target="_blank">University of
+                  Belize Website</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.odlub.com/" target="_blank">Online Campus</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://registration.ub.edu.bz/checkoutsignin.cfm"
+                  target="_blank">Student Portal</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://doit.ub.edu.bz/" target="_blank">UB MPIT:
+                  Information Technology Program</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" target="_blank">Student Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h4>Thank you for looking at our site. We hope you enjoyed your experience.</h4>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Dewi</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        Edited by <a href="https://bootstrapmade.com/">TadeoBennett 2020</a></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../../assets/js/main.js"></script>
+
+  <!-- my script -->
+  <script>
+    function geoFindMe() {
+
+      const status = document.querySelector('#status');
+      //const mapLink = document.querySelector('#map-link');
+
+      // mapLink.href = '';
+      // mapLink.textContent = '';
+
+      async function success(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        const apikey = `31e74d9988a13e0a242ea0d788045ce4`;
+
+        const location = document.getElementById("location");
+        const w_type = document.getElementById("w-type");
+        const degrees = document.getElementById("degrees");
+        const feels_like = document.getElementById("feels-like");
+        const precipitation = document.getElementById("prec");
+        const humidity = document.getElementById("humidity");
+        const w_type_image = document.getElementById("w-type-image");
+
+        //status.textContent = '';
+        //mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+        //mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+
+        const api = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,daily&appid=${apikey}&units=imperial`;
+
+        const getCurrentWeather = await fetch(api);
+        const current = await getCurrentWeather.json();
+        console.log("You received: ", current);
+
+
+        location.innerText = current.timezone;
+        w_type.innerText = current.current.weather[0].description;
+        degrees.innerText = current.current.temp + "°F";
+        feels_like.innerText = "Feels like " + current.current.feels_like + "°F";
+        precipitation.innerText = current.minutely[0].precipitation + " mm³ rain";
+
+        // document.getElementById("labelp").textContent = "rain";
+        // document.getElementById("labelp").style.textDecoration = "italic";
+        // document.getElementById("labelh").textContent = "humidity";
+        // document.getElementById("labelh").style.textDecoration = "italic";
+
+
+        humidity.innerText = current.current.humidity + "% humidity";
+        status.textContent = "Success";
+        status.style.color = "greenyellow";
+      }
+
+      function error() {
+        status.textContent = 'Unable to retrieve your location';
+        status.style.color = "red";
+      }
+
+      if (!navigator.geolocation) {
+        status.textContent = 'Geolocation is not supported by your browser';
+      } else { //run function to get location
+        status.textContent = 'Locating…';
+        navigator.geolocation.getCurrentPosition(success, error);
+      }
+
+    }
+
+    document.querySelector('#find-me').addEventListener('click', geoFindMe);
+
+  </script>
+
+</body>
+
+</html>
